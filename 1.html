@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FutureTech - Home</title>
+    <link rel="stylesheet" href="1.css">
+</head>
+<body>
+
+    <nav>
+        <div class="container">
+            <div class="logo">Future<span>Tech</span></div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>We Build <br> <span>Your Digital Future</span></h1>
+            <p>Innovative software solutions tailored for your business needs</p>
+            <a href="#contact" class="btn">Get Started</a>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="service-grid">
+                <div class="service-card">
+                    <h3> Web Development</h3>
+                    <p>Modern, fast, and responsive websites for all devices.</p>
+                </div>
+                <div class="service-card">
+                    <h3> Mobile Apps</h3>
+                    <p>Android and iOS apps with intuitive user interfaces.</p>
+                </div>
+                <div class="service-card">
+                    <h3> Cloud Solutions</h3>
+                    <p>Secure hosting and server management at scale.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="team" class="team">
+        <div class="container">
+            <h2>Our Creative Team</h2>
+            <div class="team-grid">
+                <div class="team-card">
+                    <img src="https://i.pravatar.cc/150?img=1" alt="Ahmed Mohamed">
+                    <h3>Ahmed Mohamed</h3>
+                    <p>Frontend Developer</p>
+                </div>
+                <div class="team-card">
+                    <img src="https://i.pravatar.cc/150?img=5" alt="Sara Ali">
+                    <h3>Sara Ali</h3>
+                    <p>Backend Developer</p>
+                </div>
+                <div class="team-card">
+                    <img src="https://i.pravatar.cc/150?img=11" alt="Khaled Youssef">
+                    <h3>Khaled Youssef</h3>
+                    <p>UX/UI Designer</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form id="contactForm">
+                <input type="text" id="name" placeholder="Full Name" required>
+                <input type="email" id="email" placeholder="Email Address" required>
+                <textarea id="message" placeholder="Your Message..." required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+            <p id="formMessage" style="margin-top:15px; font-weight:bold;"></p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 FutureTech. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Chat Bot -->
+<div id="chatIcon" class="chat-icon">💬</div>
+<div id="chatWindow" class="chat-window" style="display: none;">
+    <div class="chat-header">
+        <span> Support Bot</span>
+        <button id="closeChat" style="background: none; border: none; color: white; font-size: 20px; cursor: pointer;">✕</button>
+    </div>
+    <div id="chatMessages" class="chat-messages">
+        <div class="bot-msg">👋 Hello! How can I help you ? </div>
+    </div>
+    <div class="chat-input-area">
+        <input type="text" id="chatInput" placeholder="Write your question..." />
+        <button id="sendChatBtn">➤</button>
+    </div>
+</div>
+
+    <script src="1.js"></script>
+</body>
+</html>
